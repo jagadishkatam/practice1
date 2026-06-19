@@ -11,17 +11,17 @@ ae_raw <- pharmaverseraw::ae_raw
 ae_raw <- ae_raw %>%
   generate_oak_id_vars(
     pat_var = "PATNUM",
-    raw_src = "ae_raws"
+    raw_src = "ae_raw"
   ) 
 
 # Read in Controlled Terminology
 study_ct <-  data.frame(
-  codelist_code = c("C66742", "C66742"),
+  codelist_code = c("C66742"),
   term_code = c("C49487", "C49488"),
   term_value = c("N", "Y"),
   collected_value = c("No", "Yes"),
   term_preferred_term = c("No", "Yes"),
-  term_synonyms = c("No", "Yes"),
+  term_synonyms = c("No"),
   stringsAsFactors = FALSE
 )
 
