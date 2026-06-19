@@ -11,7 +11,7 @@ ae_raw <- pharmaverseraw::ae_raw
 ae_raw <- ae_raw %>%
   generate_oak_id_vars(
     pat_var = "PATNUM",
-    raw_src = "ae_raws"
+    raw_src = "ae_raw"
   ) 
 
 # Read in Controlled Terminology
